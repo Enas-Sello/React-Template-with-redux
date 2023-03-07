@@ -4,6 +4,7 @@ export const Api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "",
   }),
+ tagTypes: [""],
 
   endpoints: (builder) => ({
     getAll: builder.query({
@@ -40,4 +41,5 @@ export const Api = createApi({
     }),
   }),
 })
-export const { useGetAllQuery } = Api
+export const { useGetAllQuery ,useAddMutation,useGetAllCategoriesQuery,useGetDetailQuery} = Api
+
